@@ -1,0 +1,24 @@
+
+package fibo;
+
+public class Fibo {
+
+    public static void main(String[] args) {
+       int num2 = 0, num1=1;
+        int[] sequencia = new int[8];
+        int i;
+
+        
+        for( i = 0; i < 8; i++){
+            num1 = num1 + num2;
+            num2 = num1 - num2;
+            sequencia[i]=num1;
+            
+            if(sequencia[i]==8){
+                System.out.println("Número pertence a sequencia");
+            }
+        
+        }
+       
+    }
+    }
